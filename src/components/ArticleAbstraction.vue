@@ -22,11 +22,11 @@ const url = computed(() => {
 const emits = defineEmits(['like', 'collect'])
 
 function handleLike() {
-  emits('like', 'article', props.article.id)
+  emits('like', props.article)
 }
 
 function handleCollect() {
-  emits('collect', 'article', props.article.id)
+  emits('collect', props.article)
 }
 </script>
 

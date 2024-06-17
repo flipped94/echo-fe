@@ -4,3 +4,8 @@ export interface Feed {
   createTime: number
   ext: Record<string, string>
 }
+
+export interface FeedEventRequest {
+  limit: number
+  timestamp: number
+}

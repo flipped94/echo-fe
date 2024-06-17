@@ -1,12 +1,9 @@
 import { get } from '../utils/axios'
-import type { Feed } from '@/types/feed'
+import type { Feed, FeedEventRequest } from '@/types/feed'
 
-export function findFeedEvents(uid: string, limit: number, timestamp: number) {
+export function findFeedEvents(request: FeedEventRequest) {
   return get<Feed[]>({
     url: 'feed',
-    data: {
-      limit: limit,
-      timestamp: timestamp
-    }
+    data: request
   })
 }

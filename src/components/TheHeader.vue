@@ -44,8 +44,13 @@ function handleSearch() {
     </div>
     <div style="display: flex; align-items: center; overflow: hidden">
       <div class="nav-men">
+
         <NButton tertiary class="article-btn" :bordered="false">
-          <RouterLink class="router-link-none-style" to="/">首页</RouterLink>
+          <RouterLink class="router-link-none-style" to="/">全部</RouterLink>
+        </NButton>
+        <NButton tertiary class="article-btn" :bordered="false">
+          <RouterLink class="router-link-none-style" to="/feed">关注
+          </RouterLink>
         </NButton>
         <!-- <NButton tertiary class="qa-btn" :bordered="false">
           <RouterLink class="router-link-none-style" to="/qa">问答</RouterLink>
